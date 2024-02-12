@@ -14,3 +14,9 @@ systemctl restart docker
 
 # Delete script dockerinstall.sh
 rm dockerinstall.sh
+
+# Install docker-compose
+curl -L "https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-$(uname -s)-$(uname -m)" -o  /usr/local/bin/docker-compose
+
+# Add execute permission
+chmod +x /usr/local/bin/docker-compose
